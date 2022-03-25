@@ -10,12 +10,14 @@ The purpose of this project is to provide deliverables to the client(Louise) con
     
 ### Analysis of Outcomes Based on Launch Date
 In order to create the deliverable chart "Theater Outcomes by Launch Date" I first created a pivot table filtering for Parent Category, as well as Years. I then set "outcomes" as a column, and "Date Created Count" as Rows. At this point I had to delete Years and Days from the Rows section, so only months were displayed. I also Added "Count of outcomes" to the values section, so the total number of campaigns in each outcome/month would be added up. I then used the pivot table to create a line graph displaying the data in a more digestible format. No code was needed for this analysis.
-![Outcomes Based on Launch Date Screenshot](https://user-images.githubusercontent.com/99054057/159808830-5d75aeb4-50f5-4fa1-8757-bd378bfc2fae.png)
+
+![Theater_Outcomes_vs_Launch](Resources/Theater_Outcomes_vs_Launch.png)
 
 
 ### Analysis of Outcomes Based on Goals
 In order to create the deliverable chart "Outcomes Based on Goals" I first had to create a table calculating Number of Successful, Failed, and Canceled Projects based on their funding goal. To do this I used the code =COUNTIFS(Kickstarter!$D:$D, "<1000", Kickstarter!$F:$F, "successful", Kickstarter!$R:$R, "plays") which filtered for the goal amount, successful vs failed vs canceled, and subcategory(plays). I altered this code for each row and column to adjust for successful, failed, and canceled, as well as for goal amount. The subcategory stayed the same the whole time. I then calculated total projects for each goal range using =SUM(B2:D2) adjusting the inputs so they reflected adding up all successful, failed, and canceled campaigns. Using this, I calculated percentage successful, failed, or canceled for each goal range using =(B2/E2) adjusting the inputs so they reflected dividing number of successful, failed, or canceled campaigns by the total number of projects for each goal. I highlighted The Goal, Percentage Successful, Percentage Failed, and Percentage Canceled columbs, and inserted a line chart to create my deliverable graph. 
-![Outcomes Based on Goals Screenshot](https://user-images.githubusercontent.com/99054057/159808868-baa73d67-01e0-4ac0-9f08-1122c5a09f48.png)
+
+![Outcomes_vs_Goals](Resources/Outcomes_vs_Goals.png)
 
 
 ### Challenges and Difficulties Encountered
